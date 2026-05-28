@@ -144,13 +144,4 @@ public class PedidoController {
         List<Pedido> pedidos = servicioPedidos.consultarHistorial(clienteReceptor);
         return new ResponseEntity<>(pedidos, HttpStatus.OK);
     }
-
-    // GET /api/pedidos/todos
-    // Devuelve todos los pedidos del sistema
-    @GetMapping("/todos")
-    public ResponseEntity<List<Pedido>> listarTodos() {
-        log.info("Solicitud para listar todos los pedidos");
-        List<Pedido> pedidos = servicioPedidos.listarTodos();
-        return new ResponseEntity<>(pedidos, HttpStatus.OK);
-    }
 }

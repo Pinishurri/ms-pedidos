@@ -164,11 +164,5 @@ public class PedidoService {
     }
 
    
-    // LISTAR TODOS LOS PEDIDOS
-    // Devuelve todos los pedidos del sistema
-    
-    public List<Pedido> listarTodos() {
-        log.info("Listando todos los pedidos");
-        return repositorioPedidos.findAll();
-    }
+
 }

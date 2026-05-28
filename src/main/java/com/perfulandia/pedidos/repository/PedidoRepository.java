@@ -19,6 +19,5 @@ public interface PedidoRepository extends JpaRepository<Pedido, Long> {
     // Trae todos los pedidos que tengan un estado especifico
     List<Pedido> findByEstadoDelPedido(EstadoDelPedido estadoDelPedido);
 
-    // Trae todos los pedidos asociados a una venta especifica
-    List<Pedido> findByIdVenta(Long idVenta);
+
 }
